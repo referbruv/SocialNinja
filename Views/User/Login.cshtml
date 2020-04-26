@@ -1,0 +1,49 @@
+@inject OidcApp.Models.Entities.OidcProviders providers
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="card col-md-8 mx-auto bg-light">
+            <div class="card-body px-0 mx-0">
+                <div class="row">
+                <div class="col-12">
+                    <div class="container-fluid">
+                        <div class="row my-lg-5 mx-lg-4">
+                            <div class="col-lg-12">
+                                <h5>Sign in using</h5>
+                            </div>
+                            @foreach (var provider in providers.Providers)
+                            {
+                                switch (provider.Name)
+                                {
+                                    case "google":
+                                        <div class="col-lg-12 p-2">
+                                            <a target="_self" href="~/user/ExternalLogin?provider=@provider.Name" class="btn btn-block btn-danger">
+                                                <span class="icon-google"></span> Google
+                                            </a>
+                                        </div>
+                                        break;
+                                    case "facebook":
+                                        <div class="col-lg-12 p-2">
+                                            <a target="_self" href="~/user/ExternalLogin?provider=@provider.Name" class="btn btn-block btn-primary">
+                                                <span class="icon-facebook2"></span> Facebook
+                                            </a>
+                                        </div>
+                                        break;
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="loader">
+    <div class="osahanloading"></div>
+</div>
