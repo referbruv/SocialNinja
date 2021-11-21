@@ -34,10 +34,13 @@ To get started, follow the below steps:
 4. Update the ClientId/ClientSecret for Google, Facebook in appsettings.json
 5. Run the solution
 
-[Application Home](assets/homepage.png?raw=true "homepage")
-[Login](assets/login.png?raw=true "login")
-[LoggedIn Home](assets/loggedhome.png?raw=true "loggedIn Home")
-[Claims](assets/claims.png?raw=true "claims")
+![Application Home](assets/homepage.png?raw=true "homepage")
+
+![Login](assets/login.png?raw=true "login")
+
+![LoggedIn Home](assets/loggedhome.png?raw=true "loggedIn Home")
+
+![Claims](assets/claims.png?raw=true "claims")
 
 Read the complete article to learn more:
 
