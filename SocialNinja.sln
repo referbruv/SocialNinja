@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialNinja.Web", "SocialNinja.Web\SocialNinja.Web.csproj", "{252CB239-F1DD-4FC6-BEE8-45DF7A11BB73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNinja.Migrations", "SocialNinja.Migrations\SocialNinja.Migrations.csproj", "{8089D701-75E3-4ECC-910B-905A6194611D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNinja.Contracts", "SocialNinja.Contracts\SocialNinja.Contracts.csproj", "{8D8988DB-E730-4135-950F-225713AD5F93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNinja.Core", "SocialNinja.Core\SocialNinja.Core.csproj", "{2CACBB60-115B-4DB3-ADFE-95516E29263F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{252CB239-F1DD-4FC6-BEE8-45DF7A11BB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{252CB239-F1DD-4FC6-BEE8-45DF7A11BB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{252CB239-F1DD-4FC6-BEE8-45DF7A11BB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{252CB239-F1DD-4FC6-BEE8-45DF7A11BB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8089D701-75E3-4ECC-910B-905A6194611D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8089D701-75E3-4ECC-910B-905A6194611D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8089D701-75E3-4ECC-910B-905A6194611D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8089D701-75E3-4ECC-910B-905A6194611D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8988DB-E730-4135-950F-225713AD5F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8988DB-E730-4135-950F-225713AD5F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8988DB-E730-4135-950F-225713AD5F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8988DB-E730-4135-950F-225713AD5F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CACBB60-115B-4DB3-ADFE-95516E29263F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CACBB60-115B-4DB3-ADFE-95516E29263F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CACBB60-115B-4DB3-ADFE-95516E29263F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CACBB60-115B-4DB3-ADFE-95516E29263F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61CA59F1-3756-4EBD-8BE3-6980D0FADAFE}
+	EndGlobalSection
+EndGlobal

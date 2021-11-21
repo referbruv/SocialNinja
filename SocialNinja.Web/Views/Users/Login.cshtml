@@ -1,0 +1,37 @@
+@inject SocialNinja.Contracts.OidcProviders providers
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="card col-md-8 mx-auto bg-light">
+            <div class="card-body px-0 mx-0">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-fluid">
+                            <div class="row my-lg-5 mx-lg-4">
+                                <div class="col-lg-12">
+                                    <h5>Sign in using</h5>
+                                </div>
+                                @foreach (var provider in providers.Providers)
+                                {
+                                    <div class="col-lg-12 p-2">
+                                        <a target="_self" href="@provider.LoginUrl" class="@provider.CssClass">
+                                            <span class="icon-google"></span> @provider.ButtonText
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="loader">
+    <div class="osahanloading"></div>
+</div>
