@@ -46,6 +46,10 @@ Read the complete article to learn more:
 
 ![Getting started with Social Authentication in ASP.NET Core](https://referbruv.com/blog/posts/social-authentication-in-aspnet-core-getting-started)
 
+# Issues or Ideas?
+
+If you face any issues or would like to drop a suggestion, ![raise an issue](https://github.com/referbruv/socialninja/issues/new/choose)
+
 # Show your Support 
 
 Leave a Star if you find the solution useful. If you find the article helpful, support me by:
