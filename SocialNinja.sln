@@ -5,11 +5,16 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialNinja.Web", "SocialNinja.Web\SocialNinja.Web.csproj", "{252CB239-F1DD-4FC6-BEE8-45DF7A11BB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNinja.Migrations", "SocialNinja.Migrations\SocialNinja.Migrations.csproj", "{8089D701-75E3-4ECC-910B-905A6194611D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialNinja.Migrations", "SocialNinja.Migrations\SocialNinja.Migrations.csproj", "{8089D701-75E3-4ECC-910B-905A6194611D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNinja.Contracts", "SocialNinja.Contracts\SocialNinja.Contracts.csproj", "{8D8988DB-E730-4135-950F-225713AD5F93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialNinja.Contracts", "SocialNinja.Contracts\SocialNinja.Contracts.csproj", "{8D8988DB-E730-4135-950F-225713AD5F93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNinja.Core", "SocialNinja.Core\SocialNinja.Core.csproj", "{2CACBB60-115B-4DB3-ADFE-95516E29263F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialNinja.Core", "SocialNinja.Core\SocialNinja.Core.csproj", "{2CACBB60-115B-4DB3-ADFE-95516E29263F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{D0480683-71E9-4FE7-BF5E-148DF75C18EA}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

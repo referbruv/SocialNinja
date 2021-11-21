@@ -9,5 +9,6 @@
         public string Icon { get; set; }
         public string CssClass { get; set; }
         public string ButtonText { get; set; }
+        public bool IsEnabled { get; set; }
     }
 }
