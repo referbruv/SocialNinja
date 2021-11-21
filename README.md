@@ -44,8 +44,12 @@ To get started, follow the below steps:
 
 Read the complete article to learn more:
 
-https://referbruv.com/blog/posts/social-authentication-in-aspnet-core-getting-started
+![Getting started with Social Authentication in ASP.NET Core](https://referbruv.com/blog/posts/social-authentication-in-aspnet-core-getting-started)
 
-Leave a Star if you find the solution useful. For more detailed articles and how-to guides, visit https://referbruv.com
+# Show your Support 
+
+Leave a Star if you find the solution useful. If you find the article helpful, support me by:
 
 <a href="https://www.buymeacoffee.com/referbruv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
+For more detailed articles and how-to guides, visit https://referbruv.com
