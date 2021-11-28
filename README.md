@@ -16,7 +16,7 @@ Social Login providers implement user authentication by means of OAuth2 protocol
 
 # About the Boilerplate
 
-This boilerplate is a perfect starter for developers looking to implement OData. The solution offers the following:
+This boilerplate is a perfect starter for developers looking to implement Social Logins integration. The solution offers the following:
 
 1. Onion Architecture with defined layers for API, Persistence, Contracts and Migrations
 2. Implemented code for UnitOfWork with Repository
