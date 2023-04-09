@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -13,6 +14,7 @@ using SocialNinja.Contracts.Data;
 using SocialNinja.Core.Data;
 using SocialNinja.Migrations;
 using SocialNinja.Web.Models.Providers;
+using SocialNinja.Web.Services;
 
 namespace SocialNinja.Web
 {
@@ -34,6 +36,8 @@ namespace SocialNinja.Web
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUserManager, UserManager>();
+
+            services.AddTransient<IClaimsTransformation, MyClaimsTransformation>();
 
             var builder = services.AddAuthentication(options =>
             {
