@@ -49,6 +49,11 @@ namespace SocialNinja.Core.Data.Repositories
             return _dbSet.AsEnumerable();
         }
 
+        public IQueryable<T> GetQueryable()
+        {
+            return _dbSet.AsQueryable<T>();
+        }
+
         public void Update(T entity)
         {
             _dbSet.Attach(entity);

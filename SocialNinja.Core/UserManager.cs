@@ -16,21 +16,20 @@ namespace SocialNinja.Web.Models.Providers
             _context = contextAccessor.HttpContext;
         }
 
-        public async Task SignIn(UserProfile user, bool isPersistent = false)
+        public async Task SignIn(string loginProvider, bool isPersistent = false)
         {
             string authenticationScheme = SocialAuthenticationDefaults.AuthenticationScheme;
 
-            // Generate Claims from DbEntity
-            var claims = GetUserClaims(user);
-
-            // Add Additional Claims from the Context
-            // which might be useful
             var contextClaims = _context.User.Claims.ToList();
-            contextClaims.AddRange(claims);
-            
+
+            if (!contextClaims.Any(x => x.Type == "LoginProvider"))
+            {
+                contextClaims.Add(new Claim("LoginProvider", loginProvider));
+            }
+
             ClaimsIdentity claimsIdentity = new(contextClaims, authenticationScheme);
             ClaimsPrincipal claimsPrincipal = new(claimsIdentity);
-            
+
             var authProperties = new AuthenticationProperties
             {
                 //AllowRefresh = <bool>,
@@ -61,18 +60,7 @@ namespace SocialNinja.Web.Models.Providers
 
         public async Task SignOut()
         {
-            // await httpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             await _context.SignOutAsync(SocialAuthenticationDefaults.AuthenticationScheme);
-        }
-
-        private static List<Claim> GetUserClaims(UserProfile user)
-        {
-            List<Claim> claims = new()
-            {
-                new Claim("UserId", user.Id.ToString()),
-                new Claim("Provider", user.OIdProvider)
-            };
-            return claims;
         }
     }
 }
